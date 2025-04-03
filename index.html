@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detector</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <h1>Phishing Email Alerts</h1>
+    <table>
+        <tr><th>Sender</th><th>Subject</th><th>URLs</th><th>Phishing Detected</th></tr>
+        {% for email in emails %}
+        <tr>
+            <td>{{ email.sender }}</td>
+            <td>{{ email.subject }}</td>
+            <td>{{ email.urls }}</td>
+            <td>{{ 'Yes' if email.phishing_detected else 'No' }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
