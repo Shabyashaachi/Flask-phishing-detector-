@@ -4,7 +4,7 @@ A Flask-based phishing email detector that scans email inboxes, extracts URLs, a
 ## Installation
 1. Clone this repository:
    ```sh
-   git clone https://github.com/YOUR_USERNAME/phishing-detector.git
+   git clone https://github.com/Shabyashaachi/phishing-detector.git
    ```
 2. Navigate into the project directory:
    ```sh
